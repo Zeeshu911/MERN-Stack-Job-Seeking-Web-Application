@@ -1,0 +1,190 @@
+HERO SECTION:
+
+const details = [
+    {
+      id: 1,
+      title: "1,23,441",
+      subTitle: "Live Job",
+      icon: <FaSuitcase />,
+    },
+    {
+      id: 2,
+      title: "91220",
+      subTitle: "Companies",
+      icon: <FaBuilding />,
+    },
+    {
+      id: 3,
+      title: "2,34,200",
+      subTitle: "Job Seekers",
+      icon: <FaUsers />,
+    },
+    {
+      id: 4,
+      title: "1,03,761",
+      subTitle: "Employers",
+      icon: <FaUserPlus />,
+    },
+  ];
+
+
+POPULAR CATEGORIES:
+
+const categories = [
+    {
+      id: 1,
+      title: "Graphics & Design",
+      subTitle: "305 Open Positions",
+      icon: <MdOutlineDesignServices />,
+    },
+    {
+      id: 2,
+      title: "Mobile App Development",
+      subTitle: "500 Open Positions",
+      icon: <TbAppsFilled />,
+    },
+    {
+      id: 3,
+      title: "Frontend Web Development",
+      subTitle: "200 Open Positions",
+      icon: <MdOutlineWebhook />,
+    },
+    {
+      id: 4,
+      title: "MERN STACK Development",
+      subTitle: "1000+ Open Postions",
+      icon: <FaReact />,
+    },
+    {
+      id: 5,
+      title: "Account & Finance",
+      subTitle: "150 Open Positions",
+      icon: <MdAccountBalance />,
+    },
+    {
+      id: 6,
+      title: "Artificial Intelligence",
+      subTitle: "867 Open Positions",
+      icon: <GiArtificialIntelligence />,
+    },
+    {
+      id: 7,
+      title: "Video Animation",
+      subTitle: "50 Open Positions",
+      icon: <MdOutlineAnimation />,
+    },
+    {
+      id: 8,
+      title: "Game Development",
+      subTitle: "80 Open Positions",
+      icon: <IoGameController />,
+    },
+  ];
+
+
+POPULAR COMPANIES:
+
+const companies = [
+    {
+      id: 1,
+      title: "Microsoft",
+      location: "Street 10 Karachi, Pakistan",
+      openPositions: 10,
+      icon: <FaMicrosoft />,
+    },
+    {
+      id: 2,
+      title: "Tesla",
+      location: "Street 10 Karachi, Pakistan",
+      openPositions: 5,
+      icon: <SiTesla />,
+    },
+    {
+      id: 3,
+      title: "Apple",
+      location: "Street 10 Karachi, Pakistan",
+      openPositions: 20,
+      icon: <FaApple />,
+    },
+  ];
+
+
+POST JOB: (JOB CATEGORIES)
+
+<select
+                value={category}
+                onChange={(e) => setCategory(e.target.value)}
+              >
+                <option value="">Select Category</option>
+                <option value="Graphics & Design">Graphics & Design</option>
+                <option value="Mobile App Development">
+                  Mobile App Development
+                </option>
+                <option value="Frontend Web Development">
+                  Frontend Web Development
+                </option>
+                <option value="MERN Stack Development">
+                  MERN STACK Development
+                </option>
+                <option value="Account & Finance">Account & Finance</option>
+                <option value="Artificial Intelligence">
+                  Artificial Intelligence
+                </option>
+                <option value="Video Animation">Video Animation</option>
+                <option value="MEAN Stack Development">
+                  MEAN STACK Development
+                </option>
+                <option value="MEVN Stack Development">
+                  MEVN STACK Development
+                </option>
+                <option value="Data Entry Operator">Data Entry Operator</option>
+              </select>
+
+
+
+MY JOBS: (CATEGORIES)
+
+<select
+                            value={element.category}
+                            onChange={(e) =>
+                              handleInputChange(
+                                element._id,
+                                "category",
+                                e.target.value
+                              )
+                            }
+                            disabled={
+                              editingMode !== element._id ? true : false
+                            }
+                          >
+                            <option value="Graphics & Design">
+                              Graphics & Design
+                            </option>
+                            <option value="Mobile App Development">
+                              Mobile App Development
+                            </option>
+                            <option value="Frontend Web Development">
+                              Frontend Web Development
+                            </option>
+                            <option value="MERN Stack Development">
+                              MERN STACK Development
+                            </option>
+                            <option value="Account & Finance">
+                              Account & Finance
+                            </option>
+                            <option value="Artificial Intelligence">
+                              Artificial Intelligence
+                            </option>
+                            <option value="Video Animation">
+                              Video Animation
+                            </option>
+                            <option value="MEAN Stack Development">
+                              MEAN STACK Development
+                            </option>
+                            <option value="MEVN Stack Development">
+                              MEVN STACK Development
+                            </option>
+                            <option value="Data Entry Operator">
+                              Data Entry Operator
+                            </option>
+                          </select>
