@@ -136,3 +136,11 @@ export const jobseekerDeleteApplication = catchAsyncErrors(
     });
   }
 );
+
+export const getUser=catchAsyncErrors((req,res,next)=>{
+  const user=req.user;
+  res.status(200).json({
+    user,
+    success:true
+  })
+})
